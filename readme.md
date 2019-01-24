@@ -1,11 +1,13 @@
 #### Create a docker volume named *workdir*
 `docker volume create workdir`
-## Copy files to docker volume from host directory
-*A docker conatiner is necessary to to copy files into the docker-volume named *workdir*
+### Copy files to docker volume from host directory
+1. A docker conatiner is necessary to to copy files into the docker-volume named *workdir*
 
-..* Start a dummy container to facilitate copying `docker run -d --rm --name dummy -v workdir:/home ubuntu tail -f /dev/null`
+2. Start a dummy container to facilitate copying `docker run -d --rm --name dummy -v workdir:/home ubuntu tail -f /dev/null`
 
-..* Copy all files in *dirname* directory into docker-volume *workdir* `docker cp c:\dirname\* dummy:/home/*`
+3. Copy all files in *dirname* directory into docker-volume *workdir* `docker cp c:\dirname\* dummy:/home/*`
 
-..* Stop the container `docker stop dummy`
+4. Stop the container `docker stop dummy`
 
+### copy files to host directory from docker-volume
+* `docker cp dummy:/home/* c:\dirname\`
