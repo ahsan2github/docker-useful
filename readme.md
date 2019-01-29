@@ -1,3 +1,4 @@
+======================= Managing files between host and container ====================
 #### create a docker volume named *workdir*
 `docker volume create workdir`
 #### copy files to docker volume from host directory
@@ -12,6 +13,7 @@
 #### copy files to host directory from docker-volume
 * `docker cp dummy:/home/* c:\dirname\`
 
+===================== Saving and exporting to transfer images =======================
 #### saving a docker image in tar format 
 docker save --output="output.tar" image_name
 
