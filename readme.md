@@ -1,6 +1,6 @@
-#### Create a docker volume named *workdir*
+#### create a docker volume named *workdir*
 `docker volume create workdir`
-#### Copy files to docker volume from host directory
+#### copy files to docker volume from host directory
 1. A docker conatiner is necessary to to copy files into the docker-volume named *workdir*
 
 2. Start a dummy container to facilitate copying `docker run -d --rm --name dummy -v workdir:/home ubuntu tail -f /dev/null`
@@ -12,8 +12,8 @@
 #### copy files to host directory from docker-volume
 * `docker cp dummy:/home/* c:\dirname\`
 
-#### Exporting a docker image in tar format 
+#### exporting a docker image in tar format 
 docker export --output="output.tar" image_name
 
-#### Exporting a docker container in tar format 
+#### exporting a docker container in tar format 
 docker export --output="output.tar" container_id
