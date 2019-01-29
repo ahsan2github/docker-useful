@@ -12,8 +12,8 @@
 #### copy files to host directory from docker-volume
 * `docker cp dummy:/home/* c:\dirname\`
 
-#### exporting a docker image in tar format 
-docker export --output="output.tar" image_name
+#### saving a docker image in tar format 
+docker save --output="output.tar" image_name
 
 #### exporting a docker container in tar format 
 docker export --output="output.tar" container_id
