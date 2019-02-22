@@ -1,3 +1,8 @@
+=========== Launch a dokcer container with support for GDB and mount a docker volume ==========
+docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined --rm --name wcont -it -v workdir:/home -w /home linuxdevenv:18.04 /bin/bash
+where linuxdevenv:18.04 is the docker image, workdir is the dokcer volume
+upon launch this will provide a shell
+
 ======================= Managing files between host and container ====================
 #### create a docker volume named *workdir*
 `docker volume create workdir`
