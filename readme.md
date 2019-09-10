@@ -2,6 +2,7 @@
 
 `docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined --rm --name wcont -it -v workdir:/home -w /home linuxdevenv:18.04 /bin/bash`
 * linuxdevenv:18.04 is the docker image, workdir is the dokcer volume
+* wcont is a name the running docker conatiner can be identified with
 * upon launch this will provide a shell, the -it option is required to launch a shell
 
 ## Managing files between host and container 
