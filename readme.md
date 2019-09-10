@@ -8,7 +8,7 @@
 #### create a docker volume named *workdir*
 `docker volume create workdir`
 #### copy files to docker volume from host directory
-1. A docker conatiner is necessary to to copy files into the docker-volume named *workdir*
+1. A docker conatiner is necessary to copy files into the docker-volume named *workdir*
 
 2. Start a dummy container to facilitate copying `docker run -d --rm --name dummy -v workdir:/home ubuntu tail -f /dev/null`
 
