@@ -12,7 +12,7 @@
 
 2. Start a dummy container to facilitate copying `docker run -d --rm --name dummy -v workdir:/home ubuntu tail -f /dev/null`
 
-3. Copy all files in *dirname* directory into docker-volume *workdir* `docker cp c:\dirname\* dummy:/home/*`
+3. Copy all files frim host directory *dirname* into docker-volume *workdir* `docker cp c:\dirname\* dummy:/home/*`
 
 4. Stop the container `docker stop dummy`
 
